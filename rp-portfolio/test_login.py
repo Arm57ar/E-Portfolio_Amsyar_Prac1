@@ -39,24 +39,22 @@ def test_login_Successfully():
 	
 
 	
-def test_login_Logout():
+# def test_login_Logout():
 	
-	driver = webdriver.Chrome()
-	driver.get("http://localhost:8000/admin/login/?next=/admin/")
-	elem = driver.find_element_by_name("username")
-	elem.send_keys("AmsyarMazri")
+	# driver = webdriver.Chrome()
+	# driver.get("http://localhost:8000/admin/login/?next=/admin/")
+	# elem = driver.find_element_by_name("username")
+	# elem.send_keys("AmsyarMazri")
 
-	elem = driver.find_element_by_name("password")
-	elem.send_keys("16S29t96")
-	
-	elem.send_keys(Keys.RETURN) #press enter key
-	
-	driver.get("http://localhost:8000/admin/")
+	# elem = driver.find_element_by_name("password")
+	# elem.send_keys("16S29t96")
+		
+	# elem.send_keys(Keys.RETURN) #press enter key
+	# elem = driver.find_element_by_id('user-tools').click()
+	# assert element.text == 'Example Domains' 
 
-	assert driver.current_url == 'http://localhost:8000/admin/logout/'
-
-	time.sleep(3)
-	driver.close()
+	# time.sleep(3)
+	# driver.close()
 	
 # def test_login_changepassword(): #please try once as it will effect the password
 	# # It would go to admin page to test the the login function on username and password
@@ -85,6 +83,7 @@ def test_login_Logout():
 	
 	# elem = driver.find_element_by_class_name("default").click()
 	# #It should  pass and login to admin page
+	
 	# assert driver.current_url == 'http://localhost:8000/admin/'
 
 	# time.sleep(3)
